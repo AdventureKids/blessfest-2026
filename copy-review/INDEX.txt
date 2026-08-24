@@ -1,0 +1,32 @@
+====================================================================================================================================
+BLESSFEST 2026 — COPY REVIEW PACKETS (17 areas)
+====================================================================================================================================
+
+The packets go to the four REVIEWERS (see COVER-EMAILS.txt), not to the area
+leads. When they come back, apply the changes to data.js and re-run:
+  node tools/make-copy-review.mjs
+
+The lead's email is here for later — it's who'd get the page if we ever send
+it out to them directly.
+
+  AREA                   DIRECT LEAD                      REVIEWED BY           LEAD'S EMAIL                                       FILE
+------------------------------------------------------------------------------------------------------------------------------------
+  Hair                   Tanya Cox                        Ben Goodner           mrstycox@gmail.com                                 hair.txt
+  Nails                  Sandra Angulo                    Christian Kopeny      mrssandraangulo@gmail.com                          nails.txt
+  Clothing               Kyle Poffenberger                Pastor Jim Richards   kyle.poffenberger@cc-ea.org                        clothing.txt
+  Food Prep / Kitchen    Zack Moore                       Christian Kopeny      zack.moore@cc-ea.org                               food-prep.txt
+  Food Service           David & Sunny Barrs              Christian Kopeny      sunnyday1@sliverlion.net                           food-service.txt
+  Dining Room Hosts      KC Mercer                        Christian Kopeny      kingc67@yahoo.com                                  dining-room.txt
+  Janitorial             Pastor Jim Richards              Pastor Jim Richards   Jim.Richards@cc-ea.org                             janitorial.txt
+  Prayer / Evangelism    Pastor Ozzie & Joe McGuire       Pastor Jim Richards   ozzie.castillo@cc-ea.org, mcguire7576@gmail.com    prayer-evangelism.txt
+  Welcome / Greeter      Josh Teasley                     Ben Goodner           josh.teasley@cc-ea.org                             welcome-greeter.txt
+  Guest Check-In         Rachael Kinoshita                Ben Goodner           rachaelkinoshita@gmail.com                         guest-check-in.txt
+  Children's Ministry    Christena Mancino & Roz Galvez   Ben Goodner           christena.mancino@cc-ea.org, roz.galvez@cc-ea.org  childrens-ministry.txt
+  Dental                 Kent Toca                        Christian Kopeny      drkentjt@yahoo.com                                 dental.txt
+  Optometry              Katie Kinoshita                  Christian Kopeny      katie.kinoshita@gmail.com                          optometry.txt
+  Boutique               Becky Kopeny                     Christian Kopeny      becky.kopeny@cc-ea.org                             boutique.txt
+  Craft                  Susan Bauerle                    Christian Kopeny      susan.bauerle@cc-ea.org                            craft.txt
+  Setup Team             Vinson Lui                       Pastor Ryan Young     Vinson.Lui@cc-ea.org                               setup-team.txt
+  Tear Down Team         Vinson Lui                       Pastor Ryan Young     Vinson.Lui@cc-ea.org                               tear-down-team.txt
+
+ALL AREAS HAVE A LEAD AND AN EMAIL.

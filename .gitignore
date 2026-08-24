@@ -17,6 +17,10 @@ npm-debug.log*
 # Build zips and archives (we don't want these in history)
 *.zip
 
+# Large media originals — exceed GitHub's 100 MB file limit; the live promo is on YouTube
+media-source/
+*.mp4
+
 # Wrangler / Cloudflare local state
 .wrangler/
 .dev.vars

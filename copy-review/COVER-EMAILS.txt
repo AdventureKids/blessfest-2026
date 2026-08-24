@@ -1,0 +1,251 @@
+====================================================================================================================================
+BLESSFEST 2026 — COVER EMAILS TO THE LEADERSHIP TEAM
+====================================================================================================================================
+
+Deadline: none asked for   (set DEADLINE in tools/make-copy-review.mjs)
+
+These go to the four of you — NOT to the area leads. Each of you gets the
+areas that report to you. Copy a block into your mail client and attach the
+packets named in ATTACH.
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+TO:      christian.kopeny@cc-ea.org
+SUBJECT: Blessfest 2026 — review the copy for your 8 areas
+ATTACH:  copy-review/docx/nails.docx  +  copy-review/docx/food-prep.docx  +  copy-review/docx/food-service.docx  +  copy-review/docx/dining-room.docx  +  copy-review/docx/dental.docx  +  copy-review/docx/optometry.docx  +  copy-review/docx/boutique.docx  +  copy-review/docx/craft.docx
+
+Hi Christian,
+
+I've drafted the area pages for the Blessfest 2026 website — every area of
+service has its own page where volunteers read what they'd be doing and sign
+up. Before this goes any further, I'd like the four of us to review the
+wording.
+
+The 8 areas that report to you:
+
+  Nails (Sandra Angulo): https://blessfest-2026.pages.dev/#/area/nails
+  Food Prep / Kitchen (Zack Moore): https://blessfest-2026.pages.dev/#/area/food-prep
+  Food Service (David & Sunny Barrs): https://blessfest-2026.pages.dev/#/area/food-service
+  Dining Room Hosts (KC Mercer): https://blessfest-2026.pages.dev/#/area/dining-room
+  Dental (Kent Toca): https://blessfest-2026.pages.dev/#/area/dental
+  Optometry (Katie Kinoshita): https://blessfest-2026.pages.dev/#/area/optometry
+  Boutique (Becky Kopeny): https://blessfest-2026.pages.dev/#/area/boutique
+  Craft (Susan Bauerle): https://blessfest-2026.pages.dev/#/area/craft
+
+Attached is one Word document per area with everything that page currently
+says — the description, what volunteers will do, who's needed, and any
+requirements. Please correct anything that's wrong or that you'd put
+differently, and send them back. You can type right into the documents — don't
+worry about formatting, just get the words right and I'll handle the rest.
+
+One exception in your batch: Optometry is fully staffed by Marshall B. Ketchum
+University, so its page doesn't ask for volunteers at all — it just tells
+people the service exists. Its document looks a little different, and I was
+guessing at most of that copy, so it especially needs your eye.
+
+———
+
+SO YOU CAN SEE THE WHOLE PICTURE
+
+The site lists 17 "areas of service" — these are what a volunteer can actually
+sign up for:
+
+  Hair · Nails · Clothing · Food Prep / Kitchen · Food Service · Dining
+  Room Hosts · Janitorial · Prayer / Evangelism · Welcome / Greeter ·
+  Guest Check-In · Children's Ministry · Dental · Optometry · Boutique ·
+  Craft · Setup Team · Tear Down Team
+
+A number of things on our leadership roster are deliberately NOT on the site,
+so don't read their absence as an oversight:
+
+  · Support and back-of-house roles we aren't recruiting the public for:
+      Legal, Formstack, Media / MC / Music, AV, Worship, Video / Photo,
+      Volunteer Registration, Volunteer Placement / Name Tags, First Response,
+      Emergency Response, Shelter Contact / Transportation, Hygiene Kit
+      Collection, and Photobooth
+
+  · Partner organizations rather than areas of service:
+      Ketchum, Starbucks, WCHS, and Lestonnac
+
+  · Optometry IS listed, but flagged "fully staffed" — no sign-up.
+
+If you think something in that list deserves its own page — or that something
+with a page shouldn't have one — tell me and I'll change it.
+
+Thanks,
+Christian
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+TO:      ben.goodner@cc-ea.org
+SUBJECT: Blessfest 2026 — review the copy for your 4 areas
+ATTACH:  copy-review/docx/hair.docx  +  copy-review/docx/welcome-greeter.docx  +  copy-review/docx/guest-check-in.docx  +  copy-review/docx/childrens-ministry.docx
+
+Hi Ben,
+
+I've drafted the area pages for the Blessfest 2026 website — every area of
+service has its own page where volunteers read what they'd be doing and sign
+up. Before this goes any further, I'd like the four of us to review the
+wording.
+
+The 4 areas that report to you:
+
+  Hair (Tanya Cox): https://blessfest-2026.pages.dev/#/area/hair
+  Welcome / Greeter (Josh Teasley): https://blessfest-2026.pages.dev/#/area/welcome-greeter
+  Guest Check-In (Rachael Kinoshita): https://blessfest-2026.pages.dev/#/area/guest-check-in
+  Children's Ministry (Christena Mancino & Roz Galvez): https://blessfest-2026.pages.dev/#/area/childrens-ministry
+
+Attached is one Word document per area with everything that page currently
+says — the description, what volunteers will do, who's needed, and any
+requirements. Please correct anything that's wrong or that you'd put
+differently, and send them back. You can type right into the documents — don't
+worry about formatting, just get the words right and I'll handle the rest.
+
+———
+
+SO YOU CAN SEE THE WHOLE PICTURE
+
+The site lists 17 "areas of service" — these are what a volunteer can actually
+sign up for:
+
+  Hair · Nails · Clothing · Food Prep / Kitchen · Food Service · Dining
+  Room Hosts · Janitorial · Prayer / Evangelism · Welcome / Greeter ·
+  Guest Check-In · Children's Ministry · Dental · Optometry · Boutique ·
+  Craft · Setup Team · Tear Down Team
+
+A number of things on our leadership roster are deliberately NOT on the site,
+so don't read their absence as an oversight:
+
+  · Support and back-of-house roles we aren't recruiting the public for:
+      Legal, Formstack, Media / MC / Music, AV, Worship, Video / Photo,
+      Volunteer Registration, Volunteer Placement / Name Tags, First Response,
+      Emergency Response, Shelter Contact / Transportation, Hygiene Kit
+      Collection, and Photobooth
+
+  · Partner organizations rather than areas of service:
+      Ketchum, Starbucks, WCHS, and Lestonnac
+
+  · Optometry IS listed, but flagged "fully staffed" — no sign-up.
+
+If you think something in that list deserves its own page — or that something
+with a page shouldn't have one — tell me and I'll change it.
+
+Thanks,
+Christian
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+TO:      Jim.Richards@cc-ea.org
+SUBJECT: Blessfest 2026 — review the copy for your 3 areas
+ATTACH:  copy-review/docx/clothing.docx  +  copy-review/docx/janitorial.docx  +  copy-review/docx/prayer-evangelism.docx
+
+Hi Pastor Jim,
+
+I've drafted the area pages for the Blessfest 2026 website — every area of
+service has its own page where volunteers read what they'd be doing and sign
+up. Before this goes any further, I'd like the four of us to review the
+wording.
+
+The 3 areas that report to you:
+
+  Clothing (Kyle Poffenberger): https://blessfest-2026.pages.dev/#/area/clothing
+  Janitorial (Pastor Jim Richards): https://blessfest-2026.pages.dev/#/area/janitorial
+  Prayer / Evangelism (Pastor Ozzie & Joe McGuire): https://blessfest-2026.pages.dev/#/area/prayer-evangelism
+
+Attached is one Word document per area with everything that page currently
+says — the description, what volunteers will do, who's needed, and any
+requirements. Please correct anything that's wrong or that you'd put
+differently, and send them back. You can type right into the documents — don't
+worry about formatting, just get the words right and I'll handle the rest.
+
+———
+
+SO YOU CAN SEE THE WHOLE PICTURE
+
+The site lists 17 "areas of service" — these are what a volunteer can actually
+sign up for:
+
+  Hair · Nails · Clothing · Food Prep / Kitchen · Food Service · Dining
+  Room Hosts · Janitorial · Prayer / Evangelism · Welcome / Greeter ·
+  Guest Check-In · Children's Ministry · Dental · Optometry · Boutique ·
+  Craft · Setup Team · Tear Down Team
+
+A number of things on our leadership roster are deliberately NOT on the site,
+so don't read their absence as an oversight:
+
+  · Support and back-of-house roles we aren't recruiting the public for:
+      Legal, Formstack, Media / MC / Music, AV, Worship, Video / Photo,
+      Volunteer Registration, Volunteer Placement / Name Tags, First Response,
+      Emergency Response, Shelter Contact / Transportation, Hygiene Kit
+      Collection, and Photobooth
+
+  · Partner organizations rather than areas of service:
+      Ketchum, Starbucks, WCHS, and Lestonnac
+
+  · Optometry IS listed, but flagged "fully staffed" — no sign-up.
+
+If you think something in that list deserves its own page — or that something
+with a page shouldn't have one — tell me and I'll change it.
+
+Thanks,
+Christian
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+TO:      ryan.young@cc-ea.org
+SUBJECT: Blessfest 2026 — review the copy for your 2 areas
+ATTACH:  copy-review/docx/setup-team.docx  +  copy-review/docx/tear-down-team.docx
+
+Hi Pastor Ryan,
+
+I've drafted the area pages for the Blessfest 2026 website — every area of
+service has its own page where volunteers read what they'd be doing and sign
+up. Before this goes any further, I'd like the four of us to review the
+wording.
+
+The 2 areas that report to you:
+
+  Setup Team (Vinson Lui): https://blessfest-2026.pages.dev/#/area/setup-team
+  Tear Down Team (Vinson Lui): https://blessfest-2026.pages.dev/#/area/tear-down-team
+
+Attached is one Word document per area with everything that page currently
+says — the description, what volunteers will do, who's needed, and any
+requirements. Please correct anything that's wrong or that you'd put
+differently, and send them back. You can type right into the documents — don't
+worry about formatting, just get the words right and I'll handle the rest.
+
+———
+
+SO YOU CAN SEE THE WHOLE PICTURE
+
+The site lists 17 "areas of service" — these are what a volunteer can actually
+sign up for:
+
+  Hair · Nails · Clothing · Food Prep / Kitchen · Food Service · Dining
+  Room Hosts · Janitorial · Prayer / Evangelism · Welcome / Greeter ·
+  Guest Check-In · Children's Ministry · Dental · Optometry · Boutique ·
+  Craft · Setup Team · Tear Down Team
+
+A number of things on our leadership roster are deliberately NOT on the site,
+so don't read their absence as an oversight:
+
+  · Support and back-of-house roles we aren't recruiting the public for:
+      Legal, Formstack, Media / MC / Music, AV, Worship, Video / Photo,
+      Volunteer Registration, Volunteer Placement / Name Tags, First Response,
+      Emergency Response, Shelter Contact / Transportation, Hygiene Kit
+      Collection, and Photobooth
+
+  · Partner organizations rather than areas of service:
+      Ketchum, Starbucks, WCHS, and Lestonnac
+
+  · Optometry IS listed, but flagged "fully staffed" — no sign-up.
+
+If you think something in that list deserves its own page — or that something
+with a page shouldn't have one — tell me and I'll change it.
+
+Thanks,
+Christian

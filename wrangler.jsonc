@@ -1,0 +1,32 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "blessfest-2026",
+  "compatibility_date": "2026-07-01",
+  // Only public/ is served. Config, schema.sql, copy-review/, tools/, docs, and
+  // .dev.vars all live at the project root — OUTSIDE this dir — so they can
+  // never be published. functions/ stays at root and is handled by Pages.
+  "pages_build_output_dir": "public",
+
+  // Leaders' copy edits. Empty == the site renders data.js exactly as-is.
+  "kv_namespaces": [
+    {
+      "binding": "CONTENT",
+      "id": "7f030b9dd7434add813d6de5d380a116"
+    }
+  ],
+
+  // Volunteer roster + comms log (Formstack SMS/email workflow). Schema in schema.sql.
+  "d1_databases": [
+    {
+      "binding": "ROSTER",
+      "database_name": "blessfest-roster",
+      "database_id": "5a6665cd-7d29-4f98-9085-cef97c09cc95"
+    }
+  ],
+
+  // Cloudflare Access, for /admin. Both are set in the Pages dashboard
+  // (Settings -> Variables) — ACCESS_AUD is the Application Audience tag
+  // from the Access app, ACCESS_TEAM_DOMAIN is <team>.cloudflareaccess.com.
+  // Not secrets, but they're per-account so they don't belong in git.
+  "vars": {}
+}

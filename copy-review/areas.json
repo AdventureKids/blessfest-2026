@@ -1,0 +1,584 @@
+{
+  "year": 2026,
+  "areas": [
+    {
+      "id": "hair",
+      "name": "Hair",
+      "url": "https://blessfest-2026.pages.dev/#/area/hair",
+      "lead": "Tanya Cox",
+      "oversight": "Ben Goodner",
+      "location": "Kinder, 3 y/o, 4/5 y/o, Vista Point",
+      "reviewer": "Ben Goodner",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Free haircuts and styling that help guests feel seen and cared for.",
+      "summary": "A fresh haircut changes how a person feels about their whole day. Our hair team offers free cuts and simple styling in a warm barbershop-and-salon setting, treating every guest with patience and dignity.",
+      "whatYoullDo": [
+        "Cut, trim, and style hair for guests one-on-one",
+        "Welcome each guest to your chair and make conversation",
+        "Keep your station clean and sanitized between guests",
+        "Assist licensed stylists by hosting, sweeping, and managing the line"
+      ],
+      "needs": [
+        "Licensed cosmetologists and barbers to cut",
+        "Non-licensed helpers to host, sweep, and assist"
+      ],
+      "requirements": [
+        "Cutting hair requires a current cosmetology / barber license — confirm with the team lead",
+        "Licensed volunteers bring their own clippers and shears if possible"
+      ],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "nails",
+      "name": "Nails",
+      "url": "https://blessfest-2026.pages.dev/#/area/nails",
+      "lead": "Sandra Angulo",
+      "oversight": "Christian Kopeny",
+      "location": "",
+      "reviewer": "Christian Kopeny",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Manicures and a few quiet minutes of being pampered.",
+      "summary": "The nails station is often where guests slow down, relax, and talk. Offering a simple manicure is a small luxury that communicates real worth and care.",
+      "whatYoullDo": [
+        "Give guests a basic manicure — clean, trim, file, polish",
+        "Sit, listen, and make each guest feel welcome",
+        "Sanitize tools and keep the station tidy",
+        "Restock polish and supplies as needed"
+      ],
+      "needs": [
+        "Licensed nail techs and experienced volunteers",
+        "Helpers to host and keep things moving"
+      ],
+      "requirements": [
+        "Professional nail services may require a license — confirm with the team lead"
+      ],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "clothing",
+      "name": "Clothing",
+      "url": "https://blessfest-2026.pages.dev/#/area/clothing",
+      "lead": "Kyle Poffenberger",
+      "oversight": "Pastor Jim Richards",
+      "location": "Sanctuary",
+      "reviewer": "Pastor Jim Richards",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Help guests pick out clean, warm clothing for the season ahead.",
+      "summary": "Winter is hard on the street. Our clothing area lets each guest 'shop' donated cold-weather clothing and walk out with what they actually need — warm, clean, and their choice.",
+      "whatYoullDo": [
+        "Help guests find their size and style with dignity",
+        "Sort, fold, and restock clothing throughout the day",
+        "Keep the area organized so it stays easy to shop",
+        "Pre-event: sort and size incoming donations"
+      ],
+      "needs": [
+        "Helpers who are organized and patient",
+        "Donations: see the cold-weather clothing list"
+      ],
+      "requirements": [],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "food-prep",
+      "name": "Food Prep / Kitchen",
+      "url": "https://blessfest-2026.pages.dev/#/area/food-prep",
+      "lead": "Zack Moore",
+      "oversight": "Christian Kopeny",
+      "location": "Kitchen",
+      "reviewer": "Christian Kopeny",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Cook, prep, and plate the Thanksgiving meal for hundreds.",
+      "summary": "Behind every plate is the kitchen team. From early-morning cooking to prepping and plating, this crew makes the Thanksgiving meal happen for hundreds of guests and volunteers.",
+      "whatYoullDo": [
+        "Prep and cook the Thanksgiving meal",
+        "Plate and stage food for the serving line",
+        "Keep the kitchen clean, safe, and moving",
+        "Help with food prep the days before, too"
+      ],
+      "needs": [
+        "Kitchen-comfortable volunteers and a few experienced cooks"
+      ],
+      "requirements": [
+        "Comfort following food-safety basics; closed-toe shoes recommended"
+      ],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "food-service",
+      "name": "Food Service",
+      "url": "https://blessfest-2026.pages.dev/#/area/food-service",
+      "lead": "David & Sunny Barrs",
+      "oversight": "Christian Kopeny",
+      "location": "Gym",
+      "reviewer": "Christian Kopeny",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Work the serving line — plate and run food to every guest.",
+      "summary": "The food service team keeps the line moving. You plate meals, keep the buffet stocked and hot, and make sure every guest walks away with a full Thanksgiving plate.",
+      "whatYoullDo": [
+        "Plate and serve the meal on the line",
+        "Keep dishes stocked, hot, and looking great",
+        "Run plates to guests who need a hand",
+        "Keep the line moving with a smile"
+      ],
+      "needs": [
+        "Energetic servers who keep things moving",
+        "Friendly faces who work well on a team"
+      ],
+      "requirements": [
+        "Gloves provided; comfort standing and serving for a shift"
+      ],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "dining-room",
+      "name": "Dining Room Hosts",
+      "url": "https://blessfest-2026.pages.dev/#/area/dining-room",
+      "lead": "KC Mercer",
+      "oversight": "Christian Kopeny",
+      "location": "Gym",
+      "reviewer": "Christian Kopeny",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Host a table — welcome guests, sit down, and share the meal.",
+      "summary": "Dining room hosts are the heart of the room. You welcome guests to their tables, make them feel at home, and sit and eat the meal right alongside them — sharing the table, not just the food.",
+      "whatYoullDo": [
+        "Welcome guests to their tables and get them settled",
+        "Sit and eat with guests — share the table, not just the food",
+        "Refill drinks, clear plates, and keep tables ready",
+        "Create a warm, unhurried Thanksgiving atmosphere"
+      ],
+      "needs": [
+        "Warm, hospitable people who love conversation",
+        "Come hungry — hosts eat with guests"
+      ],
+      "requirements": [],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "janitorial",
+      "name": "Janitorial",
+      "url": "https://blessfest-2026.pages.dev/#/area/janitorial",
+      "lead": "Pastor Jim Richards",
+      "oversight": "Pastor Ryan Young",
+      "location": "Roaming",
+      "reviewer": "Pastor Jim Richards",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Keep the whole space clean, safe, and welcoming all day long.",
+      "summary": "A clean, well-kept space tells guests they matter. The janitorial team works behind the scenes all day so every area stays fresh, safe, and ready.",
+      "whatYoullDo": [
+        "Run regular rounds on restrooms and common areas",
+        "Empty trash, handle spills, and keep floors clear",
+        "Restock restroom and station supplies",
+        "Be a quiet, steady presence wherever a need pops up"
+      ],
+      "needs": [
+        "Dependable, energetic helpers who notice what's needed"
+      ],
+      "requirements": [],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "prayer-evangelism",
+      "name": "Prayer / Evangelism",
+      "url": "https://blessfest-2026.pages.dev/#/area/prayer-evangelism",
+      "lead": "Pastor Ozzie & Joe McGuire",
+      "oversight": "Pastor Jim Richards",
+      "location": "Prayer Room",
+      "reviewer": "Pastor Jim Richards",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Listen, pray, and share the hope of Jesus, one guest at a time.",
+      "summary": "Every physical need we meet points to a deeper one. The prayer and evangelism team is available all day to listen, pray with guests, and share the gospel with gentleness and love.",
+      "whatYoullDo": [
+        "Pray with guests who want prayer",
+        "Have unhurried, caring spiritual conversations",
+        "Share the gospel naturally and respectfully",
+        "Connect guests to follow-up resources when they're open"
+      ],
+      "needs": [
+        "Mature believers comfortable praying with and listening to guests"
+      ],
+      "requirements": [
+        "A heart to serve and listen first — training/guidance provided by the lead"
+      ],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "welcome-greeter",
+      "name": "Welcome / Greeter",
+      "url": "https://blessfest-2026.pages.dev/#/area/welcome-greeter",
+      "lead": "Josh Teasley",
+      "oversight": "Ben Goodner",
+      "location": "Outside Awning",
+      "reviewer": "Ben Goodner",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Be the first warm face our guests see as they arrive.",
+      "summary": "First impressions set the tone for the whole day. Greeters meet guests as they step off the buses, welcome them by name where possible, and help them feel immediately at home.",
+      "whatYoullDo": [
+        "Greet guests warmly as buses arrive",
+        "Help guests get oriented and point them to check-in",
+        "Hold doors, offer directions, and set a loving tone",
+        "Keep the entry flowing and friendly"
+      ],
+      "needs": [
+        "Outgoing, friendly people who love welcoming others"
+      ],
+      "requirements": [],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "guest-check-in",
+      "name": "Guest Check-In",
+      "url": "https://blessfest-2026.pages.dev/#/area/guest-check-in",
+      "lead": "Rachael Kinoshita",
+      "oversight": "Ben Goodner",
+      "location": "Outside Awning",
+      "reviewer": "Ben Goodner",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Register guests and send them off with a stocked backpack.",
+      "summary": "Check-in is where each guest officially begins their Blessfest day. The team registers guests, hands out the hygiene backpacks, and points them toward the services they want most.",
+      "whatYoullDo": [
+        "Check guests in at the registration tables",
+        "Hand out new backpacks stocked with hygiene items",
+        "Orient guests to the meal and available services",
+        "Keep lines moving with patience and warmth"
+      ],
+      "needs": [
+        "Organized, friendly helpers who stay calm in a busy line"
+      ],
+      "requirements": [],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "childrens-ministry",
+      "name": "Children's Ministry",
+      "url": "https://blessfest-2026.pages.dev/#/area/childrens-ministry",
+      "lead": "Christena Mancino & Roz Galvez",
+      "oversight": "Ben Goodner",
+      "location": "JHi and High School",
+      "reviewer": "Ben Goodner",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Give guest families a safe, joyful space for their kids.",
+      "summary": "Some guests arrive with children. Our children's team provides a safe, fun, supervised space with games and crafts so kids are cared for and parents can rest and receive services.",
+      "whatYoullDo": [
+        "Care for and supervise guests' children",
+        "Lead games, crafts, and activities",
+        "Keep the space safe, clean, and joyful",
+        "Help kids feel loved and celebrated"
+      ],
+      "needs": [
+        "Volunteers who love kids and bring great energy"
+      ],
+      "requirements": [
+        "A current background check is typically required to serve with children — confirm with the lead"
+      ],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "dental",
+      "name": "Dental",
+      "url": "https://blessfest-2026.pages.dev/#/area/dental",
+      "lead": "Kent Toca",
+      "oversight": "Christian Kopeny",
+      "location": "Adventure Lodge",
+      "reviewer": "Christian Kopeny",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Free dental care from licensed professionals who give their day.",
+      "summary": "Dental pain is one of the hardest needs to get met on the street. Our dental team offers free care during Blessfest, provided by licensed professionals and their support volunteers.",
+      "whatYoullDo": [
+        "Provide dental services within your scope of practice",
+        "Assist licensed providers with intake, setup, and support",
+        "Sanitize and turn over stations between guests",
+        "Help guests feel comfortable and unhurried"
+      ],
+      "needs": [
+        "Licensed dentists, hygienists, and dental assistants",
+        "Non-licensed helpers for intake and support"
+      ],
+      "requirements": [
+        "Clinical roles require current licensure — confirm credentials with the team lead"
+      ],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "optometry",
+      "name": "Optometry",
+      "url": "https://blessfest-2026.pages.dev/#/area/optometry",
+      "lead": "Katie Kinoshita",
+      "oversight": "Christian Kopeny",
+      "location": "Sanctuary",
+      "reviewer": "Christian Kopeny",
+      "staffedBy": "Marshall B. Ketchum University",
+      "staffedNote": "Optometry at Blessfest is run by doctors and student clinicians from Marshall B. Ketchum University, who bring their own team. Because this area comes fully staffed, we aren't taking volunteer sign-ups for it — but every other area still needs hands.",
+      "tagline": "Free eye exams and glasses, provided by our partners at Ketchum.",
+      "summary": "Clear vision is easy to take for granted until it's gone. Our optometry team offers free eye exams during Blessfest so guests can read, work, and see the faces around them clearly again.",
+      "whatYoullDo": [],
+      "needs": [],
+      "requirements": [],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "boutique",
+      "name": "Boutique",
+      "url": "https://blessfest-2026.pages.dev/#/area/boutique",
+      "lead": "Becky Kopeny",
+      "oversight": "Christian Kopeny",
+      "location": "5th / 6th grade",
+      "reviewer": "Christian Kopeny",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "A curated gift-and-care experience that says 'you're worth it.'",
+      "summary": "The boutique is a special touch — a curated space for personal-care items, make-up, and small gifts where guests are treated like the honored guests they are.",
+      "whatYoullDo": [
+        "Help guests select gifts and personal-care items",
+        "Offer make-up application and a little pampering",
+        "Keep the boutique stocked, beautiful, and inviting",
+        "Make every guest feel valued and celebrated"
+      ],
+      "needs": [
+        "Warm, attentive helpers; make-up experience a plus"
+      ],
+      "requirements": [],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "craft",
+      "name": "Craft",
+      "url": "https://blessfest-2026.pages.dev/#/area/craft",
+      "lead": "Susan Bauerle",
+      "oversight": "Christian Kopeny",
+      "location": "1st grade",
+      "reviewer": "Christian Kopeny",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Create something to keep — a moment of fun and connection.",
+      "summary": "The craft area is about presence and joy. Guests make something to take with them, and volunteers get unhurried time to connect over a simple, creative activity.",
+      "whatYoullDo": [
+        "Host a craft or seasonal activity station",
+        "Sit with guests and create together",
+        "Keep supplies stocked and the space welcoming",
+        "Celebrate what each guest makes"
+      ],
+      "needs": [
+        "Creative, relational volunteers who love to connect"
+      ],
+      "requirements": [],
+      "commitment": [
+        {
+          "day": "Shift 1",
+          "time": "6:30 AM – 10:00 AM"
+        },
+        {
+          "day": "Shift 2",
+          "time": "9:30 AM – 1:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "setup-team",
+      "name": "Setup Team",
+      "url": "https://blessfest-2026.pages.dev/#/area/setup-team",
+      "lead": "Vinson Lui",
+      "oversight": "Pastor Ryan Young",
+      "location": "",
+      "reviewer": "Pastor Ryan Young",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Transform the church into the Blessfest space before guests arrive.",
+      "summary": "Before a single guest steps off the bus, the setup team turns the church into a fully-decorated event space — tables, chairs, stations, signage, and decor. This is hands-on, physical, behind-the-scenes work that makes everything else possible.",
+      "whatYoullDo": [
+        "Set up tables, chairs, and every service station",
+        "Hang signage and decorate the space",
+        "Move and stage supplies where teams need them",
+        "Get every area guest-ready before doors open"
+      ],
+      "needs": [
+        "Lots of hands; some able to lift and move tables/chairs"
+      ],
+      "requirements": [
+        "Closed-toe shoes recommended; let the lead know about lifting limits"
+      ],
+      "commitment": [
+        {
+          "day": "Mon–Wed before",
+          "time": "Setup shifts, Nov 23–25 (times TBD)"
+        },
+        {
+          "day": "Thanksgiving Day",
+          "time": "Early call time (~5:30 AM) for final setup"
+        }
+      ]
+    },
+    {
+      "id": "tear-down-team",
+      "name": "Tear Down Team",
+      "url": "https://blessfest-2026.pages.dev/#/area/tear-down-team",
+      "lead": "Vinson Lui",
+      "oversight": "Pastor Ryan Young",
+      "location": "",
+      "reviewer": "Pastor Ryan Young",
+      "staffedBy": "",
+      "staffedNote": "",
+      "tagline": "Close the day well — reset the space and steward the donations.",
+      "summary": "When the last guest heads home, the tear down team brings everything back to normal — breaking down stations, cleaning up, resetting the facility, and carefully handling leftover donations and supplies.",
+      "whatYoullDo": [
+        "Break down stations, tables, and chairs",
+        "Clean and reset the facility for regular use",
+        "Sort, box, and store leftover donations and supplies",
+        "Load out and finish strong as a team"
+      ],
+      "needs": [
+        "Energetic helpers who can stay late and lift"
+      ],
+      "requirements": [
+        "Closed-toe shoes recommended; let the lead know about lifting limits"
+      ],
+      "commitment": [
+        {
+          "day": "Thanksgiving Day",
+          "time": "Afternoon/evening, after the event ends"
+        },
+        {
+          "day": "Fri after",
+          "time": "Possible additional reset shift, Nov 27"
+        }
+      ]
+    }
+  ]
+}

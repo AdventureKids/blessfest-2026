@@ -6,8 +6,8 @@
    >>> THINGS TO CONFIRM / UPDATE (I drafted these — verify them):
      - config.eventDate / time  (set to Thanksgiving Day 2026)
      - config.registerUrl / shirtUrl  (still point at the 2025 forms)
-     - Most areas now run two shifts: 6:30 AM–10:00 AM and
-       9:30 AM–1:00 PM. Setup and Tear Down keep their own schedules.
+     - Most areas now run two shifts: 6:45 AM–10:00 AM and
+       9:45 AM–1:15 PM. Setup and Tear Down keep their own schedules.
      - area.lead is left blank on purpose (used by the future
        signed-up-volunteer version).
    ============================================================ */
@@ -17,26 +17,62 @@ window.BLESSFEST = {
     year: 2026,
     eventDate: "Thursday, November 26, 2026",   // Thanksgiving Day — confirm
     eventDateShort: "Thanksgiving Day · Nov 26",
-    time: "Two shifts · 6:30 AM–10 AM and 9:30 AM–1 PM",  // confirm
+    time: "Two shifts · 6:45 AM–10 AM and 9:45 AM–1:15 PM",
     location: "Calvary Chapel East Anaheim",
     address: "5605 E La Palma Ave, Anaheim, CA",
 
-    registerUrl: "https://ccea.formstack.com/forms/blessfest2025",   // update to 2026 form
-    donateUrl:   "https://pushpay.com/g/cceamissions?src=hpp",
-    shirtUrl:    "https://ccea.formstack.com/forms/blessfest_shirts_2025",
+    registerUrl: "https://ccea.formstack.com/forms/blessfest2026",   // 2026 Formstack form
+    // The form URL sends no X-Frame-Options / frame-ancestors, so it embeds
+    // cleanly. true = "Volunteer" opens it in an on-page popup (iframe); false =
+    // opens in a new tab.
+    embedForm:   true,
+    donateUrl:   "https://ppay.co/_uyMYt3CP5A",
+    shirtUrl:    "https://ccea.formstack.com/forms/blessfest_shirts_2026",
     galleryUrl:  "https://calvarychapeleastanaheim.pixieset.com/blessfest2024/",
     homeUrl:     "https://cc-ea.org/",
+
+    // Countdown target (event start, first shift). Pacific = UTC-8 in November.
+    eventStart:  "2026-11-26T06:45:00-08:00",
+    // Promo video. Either self-host a file (videoFile: "videos/blessfest.mp4",
+    // must be < 25 MB for Cloudflare Pages) OR embed a hosted one (videoUrl:
+    // YouTube "https://www.youtube.com/embed/ID" / Vimeo player URL). videoFile
+    // wins if both are set. Both empty = the video section is hidden.
+    videoFile:   "",
+    videoUrl:    "https://www.youtube.com/embed/syX7TiKA3k4",
+    // Live-counter goals shown on the homepage.
+    volunteerGoal: 800,
+    guestGoal:     800,
   },
+
+  /* Event staff / leadership shown on the /#/team page. Drop a headshot at
+     public/images/staff/<id>.jpg; until then a monogram shows. ROLE TEXT IS
+     DRAFTED — edit freely. */
+  staff: [
+    { id: "ryan",      name: "Ryan Young",          role: "BlessFest Director",    email: "ryan.young@cc-ea.org",
+      bio: "Leads the vision and coordination of BlessFest across every team." },
+    { id: "bob",       name: "Pastor Bob Kopeny",   role: "Senior Pastor",         email: "Bob.Kopeny@cc-ea.org",
+      bio: "Senior Pastor of Calvary Chapel East Anaheim." },
+    { id: "christian", name: "Christian Kopeny",    role: "Event Lead",            email: "christian.kopeny@cc-ea.org",
+      bio: "Supports the leaders in various areas leading up to and on the day of the event." },
+    { id: "ben",       name: "Ben Goodner",         role: "Event Lead",            email: "ben.goodner@cc-ea.org",
+      bio: "Supports the leaders in various areas leading up to and on the day of the event." },
+    { id: "jim",       name: "Pastor Jim Richards", role: "Event Lead",            email: "Jim.Richards@cc-ea.org",
+      bio: "Supports the leaders in various areas leading up to and on the day of the event." },
+    { id: "vickie",    name: "Vickie Wright",       role: "Volunteer Coordinator", email: "Vickie.Wright@cc-ea.org",
+      bio: "Places every volunteer and keeps each team staffed and informed." },
+    { id: "scott",     name: "Scott Wiedensohler",  role: "Event Lead",            email: "Scott.Wiedensohler@cc-ea.org",
+      bio: "Supports the leaders in various areas leading up to and on the day of the event." },
+  ],
 
   mission: {
     heroLine1: "A seat at the table",
     heroLine2: "for our neighbors.",
     heroSub:
-      "Blessfest is our Thanksgiving Day outreach to neighbors experiencing homelessness. We bus guests in from partner shelters, share a full Thanksgiving meal together, and offer free services — all to meet real needs and point to the One who meets every need: Jesus.",
+      "BlessFest is our Thanksgiving Day outreach to neighbors experiencing homelessness. We bus guests in from partner shelters, share a full Thanksgiving meal together, and offer free services — all to meet real needs and point to the One who meets every need: Jesus.",
     verseRef: "Romans 12:10 (NIV)",
     verse: "Be devoted to one another in love. Honor one another above yourselves.",
     body:
-      "Each Thanksgiving we open the doors of the church to hundreds of guests. Our goal is to meet as many physical needs as possible while caring for the whole person. Every guest can enjoy a complete Thanksgiving meal and free services, and leaves with a new backpack stocked with hygiene items, toiletries, and scripture reminders. Volunteers don't just serve — we sit down and eat together, because everyone deserves to share a table with people who love them.",
+      "Each Thanksgiving we open the doors of the church to hundreds of guests. Our goal is to meet as many physical needs as possible while caring for the whole person. Every guest can enjoy a complete Thanksgiving meal and free services, and leaves with a hygiene kit of toiletries and scripture reminders. Volunteers don't just serve — we sit down and eat together, because everyone deserves to share a table with people who love them.",
     closingVerseRef: "Matthew 25:40",
     closingVerse:
       "Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me.",
@@ -46,23 +82,22 @@ window.BLESSFEST = {
     { label: "Free Thanksgiving meal", detail: "A full, sit-down meal shared together." },
     { label: "Transportation provided", detail: "Guests bused to and from partner shelters." },
     { label: "Free services", detail: "Haircuts, dental, clothing, prayer, and more." },
-    { label: "Hygiene backpacks", detail: "Each guest leaves with stocked supplies." },
+    { label: "Hygiene kits", detail: "Each guest leaves with stocked hygiene essentials." },
   ],
 
   needs: {
     hygieneTitle: "Hygiene kit items",
-    hygieneNote: "Travel-size welcome. Collected for guest backpacks.",
-    hygiene: ["Soap", "Shampoo", "Deodorant", "Toothpaste", "Toothbrush", "Comb / brush", "Tissue", "Granola bar"],
+    hygieneNote: "Completed kits or bulk items both welcome. Travel-size preferred.",
+    hygiene: ["Toothbrush", "Toothpaste", "Floss", "Deodorant", "Comb / brush", "Hand sanitizer", "Travel soap & shampoo", "Chapstick", "Snack (granola bar, dried fruit, crackers)"],
     clothingTitle: "Cold-weather clothing",
-    clothingNote: "Clean and gently used unless noted. Men's & women's adult sizes.",
+    clothingNote: "New or gently used unless noted. No t-shirts, blouses, or tops this year.",
     clothing: [
-      { item: "Underwear", note: "New only · #1 requested · men's M, women's S/M" },
-      { item: "Socks", note: "New only · #2 requested · no children's" },
-      { item: "Blankets", note: "Clean · we ran out the last two years" },
-      { item: "Shoes", note: "Lightly used or new · no sandals, no children's" },
-      { item: "Pants", note: "Clean, no shorts · men's & women's L" },
-      { item: "Sweaters & coats", note: "Clean · men's & women's" },
-      { item: "Blouses & t-shirts", note: "Clean · men's & women's M/L" },
+      { item: "Blankets", note: "New or lightly used · we ran out the last two years" },
+      { item: "Jackets", note: "New or lightly used · men's & women's" },
+      { item: "Pants", note: "New or lightly used · no shorts · men's & women's" },
+      { item: "Shoes", note: "New or lightly used · no sandals" },
+      { item: "Underwear", note: "Brand new only · men's M, women's S/M" },
+      { item: "Socks", note: "Brand new only · no children's" },
     ],
   },
 
@@ -72,7 +107,7 @@ window.BLESSFEST = {
     { q: "Do volunteers eat with the guests?",
       a: "Yes. Please come ready to eat. We want our guests to experience a Thanksgiving meal with people who love them — let's break bread together." },
     { q: "What should I bring to volunteer?",
-      a: "Your Blessfest shirt and a good attitude. Wearing your shirt is encouraged but not required." },
+      a: "Your BlessFest shirt and a good attitude. Wearing your shirt is encouraged but not required." },
     { q: "What should I do with my purse?",
       a: "Leave purses and valuables at home or in a safe place. Guests aren't permitted to bring purses into the church, so we ask volunteers to do the same." },
   ],
@@ -105,8 +140,8 @@ window.BLESSFEST = {
         "Assist licensed stylists by hosting, sweeping, and managing the line",
       ],
       commitment: [
-        { day: "Shift 1", time: "6:30 AM – 10:00 AM" },
-        { day: "Shift 2", time: "9:30 AM – 1:00 PM" },
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
       ],
       needs: [
         "Licensed cosmetologists and barbers to cut",
@@ -133,20 +168,20 @@ window.BLESSFEST = {
         "Restock polish and supplies as needed",
       ],
       commitment: [
-        { day: "Shift 1", time: "6:30 AM – 10:00 AM" },
-        { day: "Shift 2", time: "9:30 AM – 1:00 PM" },
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
       ],
       needs: [
         "Licensed nail techs and experienced volunteers",
         "Helpers to host and keep things moving",
       ],
       requirements: [
-        "Professional nail services may require a license — confirm with the team lead",
+        "No license required — just a friendly, steady hand",
       ],
       lead: "",
       photos: [
-        { src: "images/areas/nails-1.jpg", caption: "A manicure — and plenty of laughter" },
-        { src: "images/areas/nails-2.jpg", caption: "Careful, personal attention for every guest" },
+        { src: "images/areas/nails/nails-1.jpg", caption: "A manicure — and plenty of laughter" },
+        { src: "images/areas/nails/nails-2.jpg", caption: "Careful, personal attention for every guest" },
       ],
     },
     {
@@ -163,8 +198,8 @@ window.BLESSFEST = {
         "Pre-event: sort and size incoming donations",
       ],
       commitment: [
-        { day: "Shift 1", time: "6:30 AM – 10:00 AM" },
-        { day: "Shift 2", time: "9:30 AM – 1:00 PM" },
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
       ],
       needs: [
         "Helpers who are organized and patient",
@@ -176,7 +211,7 @@ window.BLESSFEST = {
     },
     {
       id: "food-prep",
-      name: "Food Prep / Kitchen",
+      name: "Kitchen",
       icon: "chef",
       tagline: "Cook, prep, and plate the Thanksgiving meal for hundreds.",
       summary:
@@ -188,8 +223,8 @@ window.BLESSFEST = {
         "Help with food prep the days before, too",
       ],
       commitment: [
-        { day: "Shift 1", time: "6:30 AM – 10:00 AM" },
-        { day: "Shift 2", time: "9:30 AM – 1:00 PM" },
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
       ],
       needs: [
         "Kitchen-comfortable volunteers and a few experienced cooks",
@@ -214,8 +249,8 @@ window.BLESSFEST = {
         "Keep the line moving with a smile",
       ],
       commitment: [
-        { day: "Shift 1", time: "6:30 AM – 10:00 AM" },
-        { day: "Shift 2", time: "9:30 AM – 1:00 PM" },
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
       ],
       needs: [
         "Energetic servers who keep things moving",
@@ -226,7 +261,7 @@ window.BLESSFEST = {
       ],
       lead: "",
       photos: [
-        { src: "images/areas/food-service-1.jpg", caption: "The crew keeping every table fed" },
+        { src: "images/areas/food-service/food-service-1.jpg", caption: "The crew keeping every table fed" },
       ],
     },
     {
@@ -243,8 +278,8 @@ window.BLESSFEST = {
         "Create a warm, unhurried Thanksgiving atmosphere",
       ],
       commitment: [
-        { day: "Shift 1", time: "6:30 AM – 10:00 AM" },
-        { day: "Shift 2", time: "9:30 AM – 1:00 PM" },
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
       ],
       needs: [
         "Warm, hospitable people who love conversation",
@@ -268,8 +303,8 @@ window.BLESSFEST = {
         "Be a quiet, steady presence wherever a need pops up",
       ],
       commitment: [
-        { day: "Shift 1", time: "6:30 AM – 10:00 AM" },
-        { day: "Shift 2", time: "9:30 AM – 1:00 PM" },
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
       ],
       needs: [
         "Dependable, energetic helpers who notice what's needed",
@@ -292,8 +327,8 @@ window.BLESSFEST = {
         "Connect guests to follow-up resources when they're open",
       ],
       commitment: [
-        { day: "Shift 1", time: "6:30 AM – 10:00 AM" },
-        { day: "Shift 2", time: "9:30 AM – 1:00 PM" },
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
       ],
       needs: [
         "Mature believers comfortable praying with and listening to guests",
@@ -303,10 +338,58 @@ window.BLESSFEST = {
       ],
       lead: "",
       photos: [
-        { src: "images/areas/prayer-1.jpg", caption: "Comfort, presence, and prayer" },
-        { src: "images/areas/prayer-2.jpg", caption: "Time to stop and pray, one-on-one" },
-        { src: "images/areas/prayer-3.jpg", caption: "Lifting up every request together" },
+        { src: "images/areas/prayer-evangelism/prayer-1.jpg", caption: "Comfort, presence, and prayer" },
+        { src: "images/areas/prayer-evangelism/prayer-2.jpg", caption: "Time to stop and pray, one-on-one" },
+        { src: "images/areas/prayer-evangelism/prayer-3.jpg", caption: "Lifting up every request together" },
       ],
+    },
+    {
+      id: "photobooth",
+      name: "Photobooth",
+      icon: "camera",
+      tagline: "Capture the joy — send every guest home with a keepsake photo.",
+      summary:
+        "The photobooth is pure fun. Guests strike a pose — solo, with friends, or with the family they came with — and walk away with a printed photo to remember the day. Volunteers keep the smiles coming and help everyone feel like a star.",
+      whatYoullDo: [
+        "Welcome guests to the booth and help them pose",
+        "Run the camera and printer, handing out photos on the spot",
+        "Offer fun props and keep the energy light and joyful",
+        "Make sure every guest who wants a photo gets one",
+      ],
+      commitment: [
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
+      ],
+      needs: [
+        "Upbeat, friendly volunteers who love making people smile",
+      ],
+      requirements: [],
+      lead: "",
+      photos: [],
+    },
+    {
+      id: "transportation-team",
+      name: "Transportation Team",
+      icon: "bus",
+      tagline: "Ride along with our guests — the first friendly faces of the day.",
+      summary:
+        "The transportation team rides the buses with our guests to and from the partner shelters. You welcome each guest aboard, hand out their admission wristbands, and help everyone feel cared for from the very first mile — setting the tone before they even arrive.",
+      whatYoullDo: [
+        "Ride the bus with guests between the shelters and the church",
+        "Welcome each guest warmly as they board",
+        "Hand out admission wristbands and answer questions",
+        "Help guests on and off the bus and keep the ride smooth and safe",
+      ],
+      commitment: [
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
+      ],
+      needs: [
+        "Warm, dependable volunteers comfortable riding along and helping guests",
+      ],
+      requirements: [],
+      lead: "",
+      photos: [],
     },
     {
       id: "welcome-greeter",
@@ -322,8 +405,8 @@ window.BLESSFEST = {
         "Keep the entry flowing and friendly",
       ],
       commitment: [
-        { day: "Shift 1", time: "6:30 AM – 10:00 AM" },
-        { day: "Shift 2", time: "9:30 AM – 1:00 PM" },
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
       ],
       needs: [
         "Outgoing, friendly people who love welcoming others",
@@ -331,26 +414,26 @@ window.BLESSFEST = {
       requirements: [],
       lead: "",
       photos: [
-        { src: "images/areas/welcome-greeter-1.jpg", caption: "Welcoming guests as they arrive" },
-        { src: "images/areas/welcome-greeter-2.jpg", caption: "Greeters make everyone feel at home" },
+        { src: "images/areas/welcome-greeter/welcome-greeter-1.jpg", caption: "Welcoming guests as they arrive" },
+        { src: "images/areas/welcome-greeter/welcome-greeter-2.jpg", caption: "Greeters make everyone feel at home" },
       ],
     },
     {
       id: "guest-check-in",
       name: "Guest Check-In",
       icon: "clipboard",
-      tagline: "Register guests and send them off with a stocked backpack.",
+      tagline: "Register guests and send them off with a hygiene kit.",
       summary:
-        "Check-in is where each guest officially begins their Blessfest day. The team registers guests, hands out the hygiene backpacks, and points them toward the services they want most.",
+        "Check-in is where each guest officially begins their BlessFest day. The team registers guests, hands out hygiene kits, and points them toward the services they want most.",
       whatYoullDo: [
         "Check guests in at the registration tables",
-        "Hand out new backpacks stocked with hygiene items",
+        "Hand out hygiene kits to each guest",
         "Orient guests to the meal and available services",
         "Keep lines moving with patience and warmth",
       ],
       commitment: [
-        { day: "Shift 1", time: "6:30 AM – 10:00 AM" },
-        { day: "Shift 2", time: "9:30 AM – 1:00 PM" },
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
       ],
       needs: [
         "Organized, friendly helpers who stay calm in a busy line",
@@ -373,8 +456,8 @@ window.BLESSFEST = {
         "Help kids feel loved and celebrated",
       ],
       commitment: [
-        { day: "Shift 1", time: "6:30 AM – 10:00 AM" },
-        { day: "Shift 2", time: "9:30 AM – 1:00 PM" },
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
       ],
       needs: [
         "Volunteers who love kids and bring great energy",
@@ -391,7 +474,7 @@ window.BLESSFEST = {
       icon: "tooth",
       tagline: "Free dental care from licensed professionals who give their day.",
       summary:
-        "Dental pain is one of the hardest needs to get met on the street. Our dental team offers free care during Blessfest, provided by licensed professionals and their support volunteers.",
+        "Dental pain is one of the hardest needs to get met on the street. Our dental team offers free care during BlessFest, provided by licensed professionals and their support volunteers.",
       whatYoullDo: [
         "Provide dental services within your scope of practice",
         "Assist licensed providers with intake, setup, and support",
@@ -399,8 +482,8 @@ window.BLESSFEST = {
         "Help guests feel comfortable and unhurried",
       ],
       commitment: [
-        { day: "Shift 1", time: "6:30 AM – 10:00 AM" },
-        { day: "Shift 2", time: "9:30 AM – 1:00 PM" },
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
       ],
       needs: [
         "Licensed dentists, hygienists, and dental assistants",
@@ -408,6 +491,57 @@ window.BLESSFEST = {
       ],
       requirements: [
         "Clinical roles require current licensure — confirm credentials with the team lead",
+      ],
+      lead: "",
+      photos: [],
+    },
+    {
+      /* Partner-staffed: `staffedBy` makes this an informational page, not a
+         recruiting one — no "What you'll do", no "Who's needed", no Volunteer
+         button. See CLAUDE.md. COPY IS DRAFTED, NOT CONFIRMED. */
+      id: "optometry",
+      name: "Optometry",
+      icon: "eye",
+      tagline: "Free eye exams and glasses, provided by our partners at Ketchum.",
+      summary:
+        "Clear vision is easy to take for granted until it's gone. Our optometry team offers free eye exams during BlessFest so guests can read, work, and see the faces around them clearly again.",
+      staffedBy: "Marshall B. Ketchum University",
+      staffedNote:
+        "Optometry at BlessFest is run by doctors and student clinicians from Marshall B. Ketchum University, who bring their own team. Because this area comes fully staffed, we aren't taking volunteer sign-ups for it — but every other area still needs hands.",
+      whatYoullDo: [],
+      commitment: [
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
+      ],
+      needs: [],
+      requirements: [],
+      lead: "",
+      photos: [],
+    },
+    {
+      /* COPY IS DRAFTED, NOT CONFIRMED — team lead to refine. */
+      id: "legal-services",
+      name: "Legal Services",
+      icon: "scales",
+      tagline: "Free legal guidance from attorneys who give their morning.",
+      summary:
+        "A single unanswered legal question — an old warrant, an eviction notice, a custody worry — can keep someone stuck for years. Our legal team offers free, confidential guidance during BlessFest, provided by licensed attorneys and their support volunteers.",
+      whatYoullDo: [
+        "Offer brief legal guidance to guests within your area of practice",
+        "Help guests understand their options and next steps",
+        "Assist attorneys with intake, paperwork, and support",
+        "Keep every conversation private, calm, and unhurried",
+      ],
+      commitment: [
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
+      ],
+      needs: [
+        "Licensed attorneys across practice areas",
+        "Non-licensed helpers for intake and support",
+      ],
+      requirements: [
+        "Giving legal advice requires active bar membership in good standing — confirm with the team lead",
       ],
       lead: "",
       photos: [],
@@ -426,8 +560,8 @@ window.BLESSFEST = {
         "Make every guest feel valued and celebrated",
       ],
       commitment: [
-        { day: "Shift 1", time: "6:30 AM – 10:00 AM" },
-        { day: "Shift 2", time: "9:30 AM – 1:00 PM" },
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
       ],
       needs: [
         "Warm, attentive helpers; make-up experience a plus",
@@ -450,8 +584,8 @@ window.BLESSFEST = {
         "Celebrate what each guest makes",
       ],
       commitment: [
-        { day: "Shift 1", time: "6:30 AM – 10:00 AM" },
-        { day: "Shift 2", time: "9:30 AM – 1:00 PM" },
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
       ],
       needs: [
         "Creative, relational volunteers who love to connect",
@@ -464,7 +598,7 @@ window.BLESSFEST = {
       id: "setup-team",
       name: "Setup Team",
       icon: "boxes",
-      tagline: "Transform the church into the Blessfest space before guests arrive.",
+      tagline: "Transform the church into the BlessFest space before guests arrive.",
       summary:
         "Before a single guest steps off the bus, the setup team turns the church into a fully-decorated event space — tables, chairs, stations, signage, and decor. This is hands-on, physical, behind-the-scenes work that makes everything else possible.",
       whatYoullDo: [
@@ -509,6 +643,73 @@ window.BLESSFEST = {
       requirements: [
         "Closed-toe shoes recommended; let the lead know about lifting limits",
       ],
+      lead: "",
+      photos: [],
+    },
+    {
+      /* COPY IS DRAFTED, NOT CONFIRMED — team lead to refine. */
+      id: "first-response",
+      name: "First Response",
+      icon: "shield",
+      tagline: "A calm, watchful presence that keeps everyone safe.",
+      summary:
+        "First Response is our safety and security team — steady, level-headed volunteers who keep watch over the event so guests, volunteers, and staff can focus on the day. You'll be a reassuring presence at entrances and across the grounds, ready to help, guide, and calmly handle whatever comes up.",
+      whatYoullDo: [
+        "Keep a friendly, watchful eye on entrances and the grounds",
+        "Help guests and volunteers find their way and feel welcome",
+        "Keep walkways and exits clear and orderly",
+        "Calmly de-escalate and radio for help when needed",
+      ],
+      commitment: [
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
+      ],
+      needs: [
+        "Calm, alert volunteers comfortable being a steady presence",
+        "A background in security, law enforcement, or the military is a plus (not required)",
+      ],
+      requirements: [
+        "Must be 18+, able to stand and walk for your shift, and stay level-headed under pressure",
+      ],
+      lead: "",
+      photos: [],
+    },
+    {
+      /* Internal, invite-only — filtered off the public site (see `internal` in
+         index.html). Kept here so it's assignable and has a name/leader in the backend. */
+      id: "emergency-response",
+      name: "Emergency Response",
+      icon: "aid",
+      internal: true,
+      tagline: "Trained medical and emergency response for the day.",
+      summary:
+        "Emergency Response is our trained medical and emergency team, filled by invitation.",
+      whatYoullDo: [],
+      commitment: [
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
+      ],
+      needs: [],
+      requirements: [],
+      lead: "",
+      photos: [],
+    },
+    {
+      /* Internal, invite-only — handpicked volunteers, no public page. */
+      id: "volunteer-check-in",
+      name: "Volunteer Check-In",
+      icon: "clipboard",
+      internal: true,
+      tagline: "Check volunteers in and point them to their teams.",
+      summary:
+        "Volunteer Check-In is a handpicked team that greets volunteers as they arrive, checks them in, and gets them to the right area.",
+      whatYoullDo: [],
+      commitment: [
+        { day: "Shift 1", time: "6:45 AM – 10:00 AM" },
+        { day: "Shift 2", time: "9:45 AM – 1:15 PM" },
+      ],
+      needs: [],
+      requirements: [],
       lead: "",
       photos: [],
     },

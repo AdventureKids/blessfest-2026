@@ -1,0 +1,18 @@
+# Files in the project root that Cloudflare Pages must NOT serve publicly.
+# The live site is only index.html, data.js, and images/. functions/ is handled
+# by Pages Functions (not static), so it's not listed here.
+.dev.vars
+.dev.vars.*
+.wrangler
+.assetsignore
+wrangler.jsonc
+schema.sql
+CLAUDE.md
+README.md
+DEPLOY.md
+copy-review
+tools
+package.json
+package-lock.json
+node_modules
+.gitignore
